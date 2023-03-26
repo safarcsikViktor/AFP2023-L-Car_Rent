@@ -21,3 +21,25 @@
 
 
 #### Fogalomtár
+
+Gépjármű: gépjármű alatt értjük a cégünk által bérbadásra kínált személy- és haszongépjárműveket, motorokat egyaránt. A gépjárművek különböző meghatározott paraméterekkel rendelkeznek.
+
+Műszaki paraméterek: Ide tartozik a motor típusa, teljesítménye, a kivitel, gyártási év, üzemanyag típus, hajtáslánc, tömeg, beltéri és kültéri adatok, üzemanyagfogyasztás, gumiabroncsok
+
+Beltéri adatok: Ide tartozik az ülések száma, a csomagtartó mérete, valamint az utastér felszereltségének jellemzői (légzsák, klíma, vezetéstámogató rendszerek, egyéb kényelmi funkciók)
+
+Kültéri adatok: ajtók száma, jármű színe, fényszóró fajtája.
+
+Bérleti díj: A bérleti díj napidíjként kerül felszámításra és minden megkezdett 24 óra egy újabb napnak számít. A bérleti díj az üzemanyag költségét nem tartalmazza.
+
+Biztosítások: Felelősség biztosítás (TPI), Önrész csökkentő törésbiztosítás (CDW) – Az önrész mértékéig csökkenti a bérlő
+felelősségét káresemény esetén /casco biztosítás/, Lopásbiztosítás (TI) – Lopás esetén nyújt fedezetet
+
+Önrész (Excess): Az az összeg, amelynek mértékéig a bérlő felelősséggel tartozik a bérautóban keletkezett kárért. 
+
+Kár: Minden olyan kárért a bérlő tartozik felelősséggel – kivéve, ha az bizonyítottan a jármű műszaki meghibásodásából eredően következett be –, amely a szerződés kezdetén nem volt jelezve. Felelősségének összegszerű felső határa a szerződésben vállat önrésztől függ.
+
+
+
+
+
