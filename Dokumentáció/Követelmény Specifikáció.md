@@ -8,6 +8,12 @@
 
 #### **A rendszerre vonatkozó szabályok**
 
+Bérbe vevő adatait a hatályos adatvédelmi előírások, a GDPR szabályzat alapján vagyunk kötelesek tárolni. Az elkészült honlapon szükséges megjeleníteni az Adatkezelési hozzájáruló nyilatkozatot.
+
+A gépjárműkölcsönzés a 771 TEAOR kód alatt nyilvántartott, engedélyköteles tevékenység. Magyarországon a gépjármű bérbeadást a 2004. évi CVIII. törvény a gazdasági reklámtevékenységek általános szabályairól és az azokat módosító jogszabályok szabályozzák.
+
+Az elkészített weboldal fejlesztése Laravel alapokon történjen. Az adatok tárolása relációs adatbázis kerüljön kialakításra.
+
 
 #### **Jelenlegi üzleti folyamatok modellje**
 
