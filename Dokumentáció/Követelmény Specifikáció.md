@@ -17,9 +17,36 @@ Az elkészített weboldal fejlesztése Laravel alapokon történjen. Az adatok t
 
 #### **Jelenlegi üzleti folyamatok modellje**
 
+Járműbérlési ajánlatok nyilvántartása: 
+A bérelhető járművek részleteinek megérdeklődése a tulajdonostól, majd azok rögzítése táblázatos formában. Stock fotók vásárlása az elérhető gépjárművek illusztrálására, azok beillesztés egy sablon dokumentumba, a paraméterek átírása, majd dokumentum nyomtatása a katalógus részére.
+
+A kibérelhető gépjármű díjának meghatározása: 
+A gépkocsi igénybevételénél az árra vonatkozó szabályokat tekintve megkülönböztetünk magánszemélyeket és vállalkozókat. Az óradíj meghatározásánál szintén szerepet játszanak olyan tényezők, mint a gépkocsi vételára, modellje, gyártásiéve és a karbantartással járó költségek. A benzinár jövőbeli növekedése befolyásolhatja az óradíját.
+Drágább gépjárműveknél kaució letételével biztosítja be a cég a szolgáltatást igénylő személy gondatlanságából keletkező károk esetén a javítással járó költségeket. Amennyiben a gépjármű sértetlen, ugyanolyan állapotban kerül a bérlés után visszaadásra, mint amikor azt a bérlő átvette, a kaució teljes összege visszaadásra kerül.
+
+Ajánlatok meghirdetése:
+Az elérhető gépjárművek fényképpel és árral ellátott meghirdetése kísérő szöveggel, különböző közösségi oldalakon (esetlegesen infuleszerek bevonásával) vagy cég ismertetése félperces figyelemfelkeltő, illetve lényegre törő rádiós hirdetések formájában.  A hirdetés mindkét változatának tartalmaznia kell a cég nevét és elérhetőségét. 
 
 #### **Igényelt üzleti folyamatok**
 
+•	Felhasználói fiók birtokában:
+  Bejelentkezés: főoldal => bejelentkezés gomb => felhasználói azonosító és jelszó megadása
+	Új ajánlatkérés: bejelentkezés felhasználói jogkörrel => menü => ajánlatkérés => új ajánlatkérés => adatok kitöltése => véglegesítés 
+	Profil szerkesztése: bejelentkezés felhasználói jogkörrel => menü => Profil ikon => profiladatok szerkesztése => véglegesítés 
+	Ajánlatkérés elvetése: bejelentkezés felhasználói jogkörrel => menü => ajánlatkérés => ajánlatkéréseim => ajánlatkérés törlése => véglegesítés
+  
+•	Admin fiók birtokában:
+	Admin belépés: főoldal => bejelentkezés => admin azonosító és jelszó megadása
+	Új jármű feltöltése: bejelentkezés adminisztrátori jogkörrel => menü => Járművek kezelése => új jármű felvitele => adatok kitöltése => véglegesítés
+	Jármű adatok módosítása: bejelentkezés adminisztrátori jogkörrel => menü => járművek kezelése => hirdetés szerkesztése => adatok módosítása => véglegesítés
+	Jármű törlése: bejelentkezés adminisztrátori jogkörrel => menü => járművek kezelése => jármű törlése => véglegesítés
+	Elérhetőség deaktiválása: bejelentkezés adminisztrátori jogkörrel => menü => járművek kezelése => hirdetés szerkesztése => deaktiválás => véglegesítés
+
+•	Felhasználói fiók nélkül:
+	Regisztráció: főoldal => regisztráció gomb => adatok kitöltése => véglegesítés
+	Keresés: a felhasználó a keresőmezőbe beírja a keresni kívánt kulcsszavakat => keresés => találatok megjelenítése
+	Részletes keresés: a felhasználó a részletes keresés opciót választja ki => megadja a keresés specifikációit => keresés => találatok megjelenítése
+	Információ a cégről: főoldal => rólunk
 
 
 #### **Követelménylista**
