@@ -54,17 +54,18 @@ Az elérhető gépjárművek fényképpel és árral ellátott meghirdetése kí
 
 
 #### **Követelménylista**
-KÓD - MEGNEVEZÉS
-K1 - Regisztráció és bejelentkezési lehetőség jogosultsági szintekkel (Bérbeadó-Bérlő)
-K2 - Egyszerűen értelmezhető, lényegre törő letisztult felület
-K3 - Járművek adatai tárolása adatbázisban
-K4 - Járművek böngészése szűrési opciókkal
-K5 - Kép tárolási lehetőség a bérelhető járművekről
-K6 - Adatbázisban rögzített jármű törlése, módosítása és új hozzáadása
-K7 - Kiválasztott járműről információ lekérés (Foglalt -e, bérlési díj stb.)
-K8 - Bérbe adott járművek nyomonkövetése a szükséges információkkal
-K9 - Bérlők adatai tárolása adatbázisban
-K10 - Járművek kártörténete és egyéb események nyomonkövetése
+| Kód  |                          Megnevezés                          |
+| :--: | :----------------------------------------------------------: |
+|  K1  |Regisztráció és bejelentkezési lehetőség jogosultsági szintekkel (Bérbeadó-Bérlő)|
+|  K2  |  Egyszerűen értelmezhető, lényegre törő letisztult felület   |
+|  K3  |          Járművek adatainak tárolása adatbázisban            |
+|  K4  |           Járművek böngészése szűrési opciókkal              |
+|  K5  |        Kép tárolási lehetőség a bérelhető járművekről        |
+|  K6  |Adatbázisban rögzített jármű törlése, módosítása és új hozzáadása|
+|  K7  |Kiválasztott járműről információ lekérés (Foglalt -e, bérlési díj stb.)|
+|  K8  |Bérbe adott járművek nyomon követése a szükséges információkkal|
+|  K9  |            Bérlők adatai tárolása adatbázisban               |
+| K10  |   Járművek kártörténete és egyéb események nyomon követése   |
 
 
 #### Fogalomtár
