@@ -5,6 +5,7 @@
 A megrendelő egy gyorsan fejlődő, autóbérléssel foglalkozó cég, ahol rövidebb, illetve hosszabb távra lehet különféle kategóriájú járműveket bérelni. Jelenleg 5 alkalmazottja van a vállalkozásnak:
 
 -négy személy, akik az autókat bemutatják az érdeklődő bérlőknek,
+
 -egy cégvezető, aki az anyagi dolgokkal foglalkozik, kiutalja a fizetéseket, rendszerezi a bevételeket, és pénzügyi terveket készít.
 
 A cég jelenleg még nem rendelkezik weboldallal, de a későbbiekben mindenképp szeretnének létrehozni egy weboldalt a leendő ügyfeleik elérése érdekében. Egyelőre csak egy kis bérelt irodával rendelkeznek, ahonnan 3 autó bérelhető. Kizárólag közösségi oldalakon hirdetik magunkat, reklámra még nem költenek. Az érdeklődőkkel jobbára telefonon, esetleg emailben tartják a kapcsolatot. Az aktuális bérelhető járműveket a közösségi oldalakon, és egy katalógusban lehet megtekinteni a cég irodájában. További érdeklődés esetén a helyszínen meg tudják mutatni az érdeklődőnek az autót, amennyiben az, az adott időpontban nincs más részére bérbe adva. A nyilvántartás egyelőre Excel táblázatban valósul meg, minden személyes és pénzügyi adat ilyen formában van tárolva.
