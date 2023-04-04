@@ -163,6 +163,8 @@ Rendszerhasználati esetek és lefutásaik:
 #### 11.1. Tesztesetek a megadott követelménylista alapján
 
 #### 11.2. Egyéb teszteseket
+- 11.1. Terheléses teszt
+- 11.2. Biztonsági teszt a szenzitív adatok tárolására
 
 ### 12. Telepítési terv
 
