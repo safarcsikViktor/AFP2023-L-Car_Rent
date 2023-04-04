@@ -28,6 +28,11 @@
 #### 4.2 Nem funkcionális követelmények 
 
 ### 5. Funkcionális terv
+
+A rendszerünkben két csoportot különböztetünk meg. Az egyik csoport az ügyfelek, akik gépjárművet szeretnének bérelni, esetleg tájékozódni az elérhető hirdetésekkel és változásokkal kapcsolatban. Másik nagy csoport a hirdetéseket kezelő munkatársak, akik ebben segítséget nyújtanak az ügyfeleknek. Értelemszerűen az utóbbi csoport nagyobb felhasználó jogosultságokkal rendelkezik, például módosíthatja a feltöltött hirdetés adatait, illetve törölheti akár az ügyfeleket vagy a hirdetéseket is.
+
+Rendszerhasználati esetek és lefutásaik:
+
 <p align="center">
     <img src="https://user-images.githubusercontent.com/83767448/229844788-fa96d968-c6df-4378-b5b2-e3cdc2150525.png">
 </p>
