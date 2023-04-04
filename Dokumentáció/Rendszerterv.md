@@ -28,6 +28,12 @@
 #### 4.2 Nem funkcionális követelmények 
 
 ### 5. Funkcionális terv
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/83767448/229844788-fa96d968-c6df-4378-b5b2-e3cdc2150525.png">
+</p>
+
+    
+
 
 ### 6. Fizikai környezet
 
