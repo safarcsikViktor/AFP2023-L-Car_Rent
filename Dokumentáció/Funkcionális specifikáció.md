@@ -3,6 +3,7 @@
 
 #### Áttekintés
 
+Megrendelőnk egy gépjárművek bérbeadásával foglalkozó cég, ami eddig csak minimálisan digitalizálta magát, most viszont elérkezettnek látja az időt egy weboldal létrehozására, ahol megoszthatják az adatbázisukban szereplő kibérelhető gépjárműveket, valamint felületet biztosíthatnak a regisztrált felhasználóknak ajánlatok kérésére. 
 
 #### Jelenlegi helyzet leírása
 
@@ -28,8 +29,31 @@ Cégünk a jövőben lehetőséget szeretne biztosítani arra, hogy bérlők kö
 
 
 #### Használati esetek
+A weblapot háromféle szerepkörben lehet használni: látogató (nem regisztrált/bejelentkezett felhasználó), bérlő (bejelentkezett felhasználó), admin (a bérbeadással foglalkozó személyzet). Ezek jogosultságai a következők (aktorok):
+
+Látogató: Szabadon böngészheti a hirdetéseket, szűréseket végezhet a keresővel, kinagyíthatja a fotókat, elolvashatja a Rólunk szekciót, valamint regisztrálhat.
+
+Bérlő: A fentebb felsoroltakon kívül elmenthet magának hirdetéseket, továbbá gépjárművet bérelhet egy külön lapon, mely csak a bejelentkezés után válik láthatóvá. A foglalásait törölheti.
+
+Admin: Admin jogosultsági körrel ruházhat fel felhasználókat, valamint el is veheti ezeket a jogokat, és bármikor törölheti bárkinek az accountját. Bármikor törölhet, illetve módosíthatja a hirdetéseket.  A weboldal szerkesztéséhez is kizárólagos joga van. 
 
 ![szkör](https://user-images.githubusercontent.com/83767448/229794863-7a5afe62-841b-43ab-877e-349fb3211b50.png)
+
+
+#### Használati esetek aktorok szerinti bontásban
+
+1.) Látogató regisztráció nélkül böngészi az oldalt: oldal felkeresése -> böngészősáv használata -> lenyíló menük használata -> elérhető ajánlatok listázása -> elérhető ajánlatok listázása megadott feltételek alapján -> elérhető gépjármű kiválasztása, részletek megtekintése -> adott gépjárműhöz mellékelt fotók böngészése -> kapcsolatfelvétel az ügyintézőkkel
+
+2.) Látogató regisztrál: oldal felkeresése -> menüsávról a regisztráció kiválasztása -> személyes adatok megadása -> elérhetőségek megadása -> hozzájárulási nyilatkozat, használati feltételek elfogadása -> sikeres regisztrációról visszaigazolás
+
+3.) Regisztrált felhasználó gépjárművet bérel: oldal felkeresése -> belépés a személyes profilba -> ajánlat kiválasztása -> a bérlő személyes adatainak megadása -> küldés
+
+4.) Regisztrált felhasználó megnézi saját gépjárműbérléseit: oldal felkeresése -> belépés a személyes profilba -> elfogadott ajánlatok listázása -> részletek megtekintése -> törlés
+
+5.) A személyzet (admin) hirdetéseket módosít: oldal felkeresése -> bejelentkezés a személyes profilba -> feladott hirdetések listázása-> hirdetés adatainak módosítása, törlése -> hirdetéshez bérlőt rendel
+
+6.) Admin: oldal admin felületére belép -> felhasználók jogosultsági körét módosítja
+
 
 
 #### Képernyőtervek
