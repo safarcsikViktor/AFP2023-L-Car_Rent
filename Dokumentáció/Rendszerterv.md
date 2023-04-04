@@ -5,21 +5,73 @@
 
 ### 1. A rendszer célja
 
+A cél egy olyan reszponzív weboldal létrehozása, melyet pc-ről, tabletről és okostelefonról is könnyűszerrel el lehet érni. Egy gépjárműveket bérelhető weboldalról van szó, a megbízó erre a felületre szeretné áttelepíteni az eddig papír alapon vagy táblázatok formájában létező rendszerét, adatbázisát. A weboldalra látogatók szabadon megtekinthetik az adatbázisban szereplő autókat, szűréseket végezhetnek rajtuk a kereső funkció segítségével, és felvehetik a kapcsolatot az bérbeadó céggel. Lehetőség van regisztrációra is. A regisztrált felhasználók láthatják az eddig kibérelt járműveket.
+
+További funkciókat lehet elérni regisztrált bérlő és admin szerepkörrel rendelkező felhasználóknak. Járművet bérelni csak regisztráció után lehetséges, ahol el tudja menteni a rendszerben a bérléshez szükséges adatokat. Az admin ugyebár gyakorlatilag szabadon megtehet bármit a weboldalon, az egész oldalt megváltoztathatja, ezért az ő jogosultságait felesleges részletezni.
+
+Az oldalnak nem célja felhasználói profilokat létrehozni, minden felhasználó csak az elenyésző mennyiségű saját adatait nézheti meg és módosíthatja szükség esetén. Nem célja semmiféle jogi tanácsadást nyújtania.
+
 ### 2. Projektterv
 
 ####    2.1 Projekt szerepkörök
+   A projektet a senior projektvezető fogja össze, a projektben további 4 személy dolgozik. A projekten dolgozó személyek a feladatokat rendszeresen online megbeszélések keretében osztják fel egymás között, a projekt előrehaladását Kanban módszerrel követjük nyomon (Trello). A projektben dolgozó emberek egyformán felelősek a feladatkörükhöz tartozó dokumentáció elkészítéséért és a programozási feladatok helyes elvégézésért is. A projektben részt vevő személyek pontos listája az alábbi:
+   
+|Szerepkör|Név|Feladatok|
+|:----------------------------:|:---------------------------------------------:|--------------------------------------------------------------------------|
+|Projektvezető|Safarcsik Viktor|projekt irányítása, határidők felügyelete, projekt haladásának biztosítása|
+|Projekt munkatárs|Nyíri Tímea|dokumentáció készítése, programozás, tesztelés|
+|Projekt munkatárs|Horváth Krisztián|dokumentáció készítése, programozás, tesztelés|
+|Projekt munkatárs|Czinege Genovéva|dokumentáció készítése, programozás, tesztelés|
+|Projekt munkatárs|Tóth Levente|dokumentáció készítése, programozás, tesztelés|
 
 ####    2.2 Ütemterv
 
+A szükségletek felmérése és a projekt dokumentáció elkészítése a projekt első nagy fázisa, mely szintén két nagyobb egységre bontható: a Funkcionális specifikáció és a Rendszerterv elkészítésére. Ezen dokumentumok elkészítését követi a programozás fázis, majd a tesztelés, hibajavítás. A dokumentációkészítés nem zárul le véglegesen a Rendszertervvel, hanem a projekt egészét végigkíséri.
+
+A projekt időbeli előrehaladását az alábbi Gantt-diagramm szemlélteti:
+
+![CarRent](https://user-images.githubusercontent.com/48880572/229902903-7b8631e5-71bc-4946-86b1-83fdb8c648aa.png)
+
 ####    2.3 Projekt mérföldkövek
+
+   - I. Projekt kezdeti dokumentáció elkészítése - Funkcionális specifikáció, Rendszerterv
+   - II. Rendszertervnek megfelelő programozási feladatok
+   - III. Elkészült fejlesztés teszetelés, hibajavítás
+   - IV. Projekt lezárása
 
 ### 3. Üzleti folyamatok modellje
 
 #### 			3.1 Üzleti szereplők
 
+​Látogató: Szabadon böngészheti a bérelhető autók adatait, szűréseket végezhet a keresővel, kinagyíthatja a fotókat, elolvashatja a Rólunk szekciót, valamint regisztrálhat.
+
+​Tag: A fentebb felsoroltakon kívül elmenthet magának hirdetéseket, bérelhet autót.
+
+​Admin: A fentebb felsoroltakon kívül admin jogosultsági körrel ruházhat fel felhasználókat, valamint el is veheti ezeket a jogokat, és bármikor törölheti bárkinek az accountját. A weboldal szerkesztéséhez is kizárólagos joga van.
+
 #### 			3.2 Üzleti folyamatok
 
+   - Autók böngészése
+
+     Bárki szabadon megteheti, regisztráció nélkül. A főoldalon egy egyszerűsített kereső fogadja a látogatót, melynek igény szerinti kitöltése után, a Keresés gombra kattintva egy új lap töltődik be, ahol fel vannak sorolva a keresési feltételeknek eleget tevő autók. Ha további szűréseket szeretne végezni, akkor a főoldalon a kereső alsó sarkában található Részletes kereső linkre kattint. Ekkor betölt egy új oldal, ahol sokkal több opciót lehet megadni a keresett ingatlannal kapcsolatosan. Amennyiben a látogató további információt szeretne egy, a felsorolásban szereplő ingatlanról, annak szövegére kattintva megtekintheti az ingatlan részletes adatlapját.
+
+   - Regisztráció
+
+     A főoldalon a felső menüsorban a Regisztráció gombra kattintva betöltődik egy egyszerű regisztrációs űrlap. Itt meg kell adni egy érvényes email címet és egy hozzá tartozó jelszót, majd a Regisztráció gombra kattintva be is fejezhetjük a folyamatot.
+
+   - Felhasználó adatainak megváltoztatása
+
+     A regisztrált és bejelentkezett tagok bármikor módosíthatják az adataikat. Bejelentkezés után a felső menüsorban megjelenik az adott felhasználó email címe. Erre rákattintva megjelenik a felhasználó adatlapja, ahol átírhatja bármely adatát, majd az Elfogad gombra kattintva véglegesítheti a módosításokat.
+
+   - Bármely hirdetés módosítása/törlése
+
+     Ez a lehetőség kizárólag admin jogosultsággal érhető el. Bármely gépjármű adatlapjára navigálva az említett felhasználók találnak egy Adatlap szerkesztése gombot, melyre rákattintva a fentebb részletezett módon végezhető el az adatok módosítása vagy a hirdetés törlése.
+
 #### 			3.3 Üzleti entitások
+
+   - gépjármű
+   - bérlő
+   - bérbeadó
 
 ### 4. Követelmények
 
