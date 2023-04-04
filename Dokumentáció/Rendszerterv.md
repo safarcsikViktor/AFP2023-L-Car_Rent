@@ -135,6 +135,10 @@ Rendszerhasználati esetek és lefutásaik:
 </p>
 
 <p align="center">
+    <img src="https://user-images.githubusercontent.com/83767448/229905387-9ef27f5d-809b-4d7f-b0a0-b4574754a3da.png">
+</p>
+
+<p align="center">
     <img src="https://user-images.githubusercontent.com/83767448/229857729-6e90a60d-7b6e-4817-aa04-9ad55767f2a3.png">
 </p>
 
