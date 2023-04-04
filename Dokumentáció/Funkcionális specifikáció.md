@@ -2,7 +2,7 @@
 
 
 #### Áttekintés
-teszt
+
 
 #### Jelenlegi helyzet leírása
 
@@ -29,6 +29,7 @@ Cégünk a jövőben lehetőséget szeretne biztosítani arra, hogy bérlők kö
 
 #### Használati esetek
 
+![szkör](https://user-images.githubusercontent.com/83767448/229794863-7a5afe62-841b-43ab-877e-349fb3211b50.png)
 
 
 #### Képernyőtervek
