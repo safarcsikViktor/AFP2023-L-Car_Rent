@@ -142,7 +142,7 @@ Rendszerhasználati esetek és lefutásaik:
     <img src="https://user-images.githubusercontent.com/83767448/229857729-6e90a60d-7b6e-4817-aa04-9ad55767f2a3.png">
 </p>
 
-<p align="center">
+<p align="center" >
     <img src="https://user-images.githubusercontent.com/83767448/229856749-8a1a24a3-a921-423a-8ab4-345845bf115e.png">
 </p>
     
@@ -159,6 +159,10 @@ Rendszerhasználati esetek és lefutásaik:
 ### 10. Implementációs terv
 
 ### 11. Tesztterv
+
+<p align="center" >
+    <img src="https://user-images.githubusercontent.com/83767448/229914837-757335ac-5a33-449d-a79e-1960f8109949.png">
+</p>
 
 #### 11.1. Tesztesetek a megadott követelménylista alapján
 
