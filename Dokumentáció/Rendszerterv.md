@@ -27,6 +27,26 @@
 
 #### 4.2 Nem funkcionális követelmények 
 
+-	**Termék követelmények:**
+
+    -   Az oldal a kéréseket adatbáziskapcsolat kiépítésétől függetlenül 1000ms-on belül képes végrehajtani
+    - Az adatbázisban a felhasználó csak a saját adatait képes megváltoztatni és a foglalásait törölni.
+    - Az adatbázissal történő kommunikáció, amennyiben lehetséges tárolt eljárásokon keresztül történjen.
+    - A szoftver mérete nem haladja meg az 1GB-ot.
+    - Az oldal könnyen kezelhető legyen kisebb informatikai ismeretekkel rendelkezők számára is. Legyen átlátható és esztétikus. 
+
+-	**Szervezeti követelmények:**
+
+    -	A szoftver a szerződésben meghatározott időpontig, az előzetesen meghatározott követelményeknek megfelelő állapotban átadásra kerül. Ellenkező esetben a szerződésben feltüntetett kötbér megfizetése terheli a fejlesztő céget.
+    -	A program az előzetesen meghatározott rendszereken használható és a megadott gépekre telepítésre kerül.
+
+-	**Külső követelmények:**
+
+    -	A szoftverfejlesztő cég szakemberei és a megrendelő a kapcsolattartást az előzetesen meghatározott gyakorisággal folytatja. Amennyiben a fejlesztés előrehaladása érdekében szükséges további konzultáció, azt időpontegyeztetés után szükséges beiktatni.
+    -	A felhasználók nem szerezhetnek tudomást a többi felhasználó adatairól.
+    -	A szoftverfejlesztő cég munkatársainak a jóváhagyott etikai kódex alapján kell viselkedniük.
+
+
 ### 5. Funkcionális terv
 
 A rendszerünkben két csoportot különböztetünk meg. Az egyik csoport az ügyfelek, akik gépjárművet szeretnének bérelni, esetleg tájékozódni az elérhető hirdetésekkel és változásokkal kapcsolatban. Másik nagy csoport a hirdetéseket kezelő munkatársak, akik ebben segítséget nyújtanak az ügyfeleknek. Értelemszerűen az utóbbi csoport nagyobb felhasználó jogosultságokkal rendelkezik, például módosíthatja a feltöltött hirdetés adatait, illetve törölheti akár az ügyfeleket vagy a hirdetéseket is.
