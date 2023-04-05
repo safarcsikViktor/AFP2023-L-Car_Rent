@@ -160,9 +160,16 @@ Rendszerhasználati esetek és lefutásaik:
 
 ### 11. Tesztterv
 
+A tesztelés során törekszünk a Funkcionális Specifikációban elfogadott követelménylista alapján összeállítani a teszteseteket, és a meghatározott követelmények tesztelését a lehetőleg legszélesebb körben lefedni.
+
+A projektmunkatársak egyaránt végeznek teszteléseket is a fejlesztés mellett. A tesztelés eredményeit a tesztjegyzőkönyvben szükséges dokumentálni minden tesztesethez kapcsolódóan egy külön lapon. A tesztjegyzőkönyv sablonja a Rendszerterv mellékleteihez van csatolva, ott van lehetőség a letöltésére.
+
+
 <p align="center" >
     <img src="https://user-images.githubusercontent.com/83767448/229914837-757335ac-5a33-449d-a79e-1960f8109949.png">
 </p>
+
+A tesztelés a fejlesztés során is használt környezetben történik. A fejlesztői teszteket a programozás során a programozó automatikusan elvégzi, erről külön tesztjegyzőkönyv készítésére nincs szükség. A prototípus teszteket, integrációs teszteket a projektmunkatársak a megadott feladatmegosztás szerint végzik el, és az eredményt minden esetben dokumentálják a megadott tesztjegyzőkönyv sablon kitöltésével.
 
 #### 11.1. Tesztesetek a megadott követelménylista alapján
 
