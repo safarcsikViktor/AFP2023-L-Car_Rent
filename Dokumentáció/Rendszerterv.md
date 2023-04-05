@@ -102,7 +102,7 @@ A projekt időbeli előrehaladását az alábbi Gantt-diagramm szemlélteti:
 
 -	**Termék követelmények:**
 
-    -   Az oldal a kéréseket adatbáziskapcsolat kiépítésétől függetlenül 1000ms-on belül képes végrehajtani
+    - Az oldal a kéréseket adatbáziskapcsolat kiépítésétől függetlenül 1000ms-on belül képes végrehajtani
     - Az adatbázisban a felhasználó csak a saját adatait képes megváltoztatni és a foglalásait törölni.
     - Az adatbázissal történő kommunikáció, amennyiben lehetséges tárolt eljárásokon keresztül történjen.
     - A szoftver mérete nem haladja meg az 1GB-ot.
@@ -191,11 +191,10 @@ A tesztelés a fejlesztés során is használt környezetben történik. A fejle
 |6.1.|Adatbázisban rögzített jármű törlése |A hirdetést vagy járműadatot admin jogusultsággal lehessen törölni.|
 |6.2.|Adatbázisban rögzített jármű módosítása|A hirdetést vagy járműadatot admin jogusultsággal lehessen módosítani.|
 |7.1.|Kiválasztott járműről információ lekérés|Gépjárműről olyan információkat lekérni mint például a gyári adatok, bérlési díj vagy azt, hogy rendelkezésre áll-e még bárkinek joga van.|
-|8.1.|Bérbe adott járművek nyomon követése a szükséges információkkal|???|
-|9.1.|Bérlők adatai tárolása adatbázisban|A Rendszertervben megadott adatmodell szerint kerüljenek tárolásra az adatok |
-|9.2.|Bérlők adatmódosítása|A felhasználóknak van joguk a saját profiladataikat szerkeszteni|
-|9.2.|Foglalás lemondása|A felhasználó törölheti a foglalását|
-|10.1.|Járművek kártörténete és egyéb események nyomon követése|A Rendszertervben megadott adatmodell szerint kerüljenek tárolásra a kártörténeti és karbantartási adatok|
+|8.1.|Bérlők adatai tárolása adatbázisban|A Rendszertervben megadott adatmodell szerint kerüljenek tárolásra az adatok |
+|8.2.|Bérlők adatmódosítása|A felhasználóknak van joguk a saját profiladataikat szerkeszteni|
+|8.3.|Foglalás lemondása|A felhasználó törölheti a foglalását|
+|9.1.|Járművek kártörténete és egyéb események nyomon követése|A Rendszertervben megadott adatmodell szerint kerüljenek tárolásra a kártörténeti és karbantartási adatok|
 
 #### 11.2. Egyéb teszteseket
 - 11.1. Terheléses teszt
