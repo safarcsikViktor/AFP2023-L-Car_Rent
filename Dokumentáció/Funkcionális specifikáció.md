@@ -63,10 +63,11 @@ Admin: Admin jogosultsági körrel ruházhat fel felhasználókat, valamint el i
 #### Forgatókönyvek
 A felhasználó szeretne egy személyautót bérelni:
 
-	- Felkeresi a weboldalt böngészőn keresztül
-	- Főoldalon található "Bejelentkezés" vagy "Regisztráció" menüpontokon a megfelelő gombra kattint
-	- Saját bejelentkezési adatait megadva belép az oldalra ahol elérhetővé válnak az oldal többi funkciói
-	- "Elérhető járművek" menüpontban a rekordok közül kiválasztja a számára megfelelő személyautót
-	- Bérlés gombra kattintva egy további űrlapot jelenít meg amit a bérléshez szükséges információkkal tölti ki
-	- Ha minden adat rendben van, a kérelem regisztrálásra kerül a rendszerben
-	- A felhasználó ellenőrizheti "Bérléseim" menüponton belül az aktív és korábbi bérelt személyautóit
+- Felkeresi a weboldalt böngészőn keresztül
+- Főoldalon található "Bejelentkezés" vagy "Regisztráció" menüpontokon a megfelelő gombra kattint
+- Saját bejelentkezési adatait megadva belép az oldalra ahol elérhetővé válnak az oldal többi funkciói
+- "Elérhető járművek" menüpontban a rekordok közül kiválasztja a számára megfelelő személyautót
+- Bérlés gombra kattintva egy további űrlapot jelenít meg amit a bérléshez szükséges információkkal tölti ki
+- Ha minden adat rendben van, a kérelem regisztrálásra kerül a rendszerben
+- A felhasználó ellenőrizheti "Bérléseim" menüponton belül az aktív és korábbi bérelt személyautóit
+
