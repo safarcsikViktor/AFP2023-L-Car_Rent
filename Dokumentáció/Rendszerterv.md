@@ -173,6 +173,30 @@ A tesztelés a fejlesztés során is használt környezetben történik. A fejle
 
 #### 11.1. Tesztesetek a megadott követelménylista alapján
 
+| Teszteset száma | Teszteset leírása | Elvárt eredmény |
+|:---------------:|:-----------------:|-----------------|
+|1.1.|Regisztráció és bejelentkezési lehetőség jogosultsági szintekkel (Bérbeadó-Bérlő)|A felhasználó szerepkörének megfelelően tudja használni a weboldalt|
+|1.2.|Profilba belépés - sikeres|Helyesen megadott bejelentkezési adatok után sikeresen be lehessen lépni a saját Profil oldalra|
+|1.3.|Profilba belépés - sikertelen|Helytelen felhasználónév esetén hibaüzenetet adjon|
+|1.4.|Profilba belépés - sikertelen|Helytelen jelszó esetén hibaüzenetet adjon|
+|2.1.|Navigálás az oldal menüpontjai között|Minden menüpont a helyes aloldara mutasson, a navigáció során hibaüzenet ne jelenjen meg|
+|2.2.|Egymással összeillő, kellemes színek a weboldalon|A megrendelő által elvárt kinézete legyen az oldalnak|
+|2.3.|Halvány, kellemes színek a weboldalon|A megrendelő által elvárt kinézete legyen az oldalnak|
+|3.1.|Meghirdetett gépjárművek lista nézetben|A hirdetések lista nézetben, egymás alatt, görgethetően jelenjenek meg|
+|3.2.|A hirdetések adatai relációs adatbázisban legyenek tárolva|A Rendszertervben megadott adatmodell szerint kerüljenek tárolásra az adatok|
+|3.3.|A hirdetések adatai relációs adatbázisban legyenek tárolva - új hirdetés|Új hirdetések adatai beíródjanak az adattáblákba|
+|4.1.|Böngészés szűrési opciókkal|Böngészés szűrési opciókkal elérhető regisztrált, illetven nem regisztrált felhasználók számára is,a szűrés végrehajtásához kulcsszavak használata szükséges|
+|5.1|Hirdetés feladása - kötelezően töltendő adatok|A kötelezően töltendő adatokkal együtt fogadja csak el a hirdetésfeladást|
+|5.2.|Hirdetés feladása - képfeltöltés|Képfeltöltés és képaláírás megfelelően megjelenjen a hirdetés oldalán|
+|6.1.|Adatbázisban rögzített jármű törlése |A hirdetést vagy járműadatot admin jogusultsággal lehessen törölni.|
+|6.2.|Adatbázisban rögzített jármű módosítása|A hirdetést vagy járműadatot admin jogusultsággal lehessen módosítani.|
+|7.1.|Kiválasztott járműről információ lekérés|Gépjárműről olyan információkat lekérni mint például a gyári adatok, bérlési díj vagy azt, hogy rendelkezésre áll-e még bárkinek joga van.|
+|8.1.|Bérbe adott járművek nyomon követése a szükséges információkkal|???|
+|9.1.|Bérlők adatai tárolása adatbázisban|A Rendszertervben megadott adatmodell szerint kerüljenek tárolásra az adatok |
+|9.2.|Bérlők adatmódosítása|A felhasználóknak van joguk a saját profiladataikat szerkeszteni|
+|9.2.|Foglalás lemondása|A felhasználó törölheti a foglalását|
+|10.1.|Járművek kártörténete és egyéb események nyomon követése|A Rendszertervben megadott adatmodell szerint kerüljenek tárolásra a kártörténeti és karbantartási adatok|
+
 #### 11.2. Egyéb teszteseket
 - 11.1. Terheléses teszt
 - 11.2. Biztonsági teszt a szenzitív adatok tárolására
