@@ -149,6 +149,19 @@ Rendszerhasználati esetek és lefutásaik:
 
 
 ### 6. Fizikai környezet
+- Hardver és hálózati topológia:
+  - Az alkalmazás web platformra készül
+  - Interneten keresztül bárki elérheti a weboldalt egy böngészőn keresztül
+  - Szerver-kliens topológia
+- Fizikai alrendszerek:
+  - Webszerver: 80-as porton elérhető HTTP szolgáltatás
+  - adatbázis ?
+  - Kliens gép: internethozzáféréssel, megfelelő böngészővel és kellő hardverrel rendelkező eszköz
+- Fejlesztői eszközök:
+  - 
+  - Visual Studio Code
+  - 
+  - 
 
 ### 7. Absztrakt domain modell
 
