@@ -26,6 +26,24 @@ Cégünk a jövőben lehetőséget szeretne biztosítani arra, hogy bérlők kö
 #### Követelménylista
 
 
+| Kód  |                          Megnevezés                          |
+| :--: | :----------------------------------------------------------: |
+|  K1  |Regisztráció és bejelentkezési lehetőség jogosultsági szintekkel (Bérbeadó-Bérlő)|
+|  K2  |  Könnyedén értelmezhető, lényegre törő, letisztult, reszponzív felület   |
+|  K3  |          Járművek adatainak tárolása adatbázisban            |
+|  K4  |           Járművek böngészése szűrési opciókkal              |
+|  K5  |        Kép tárolási lehetőség a bérelhető járművekről        |
+|  K6  |Adatbázisban rögzített jármű törlése, módosítása és új hozzáadása|
+|  K7  |Kiválasztott járműről információ lekérés (Foglalt -e, bérlési díj stb.)|
+|  K8  |            Bérlők adatai tárolása adatbázisban               |
+|  K9  |   Járművek kártörténete és egyéb események nyomon követése   |
+|  K10 |            Ajánlatkérés a weboldalon keresztül               |
+|  K11 |    Regisztrált felhasználóként profil szerkeszthetősége      |
+|  K12 |        Munkavállalói adatok tárolása az adatbázisban         |
+|  K13 |Járművek elérhetőségét egyszerűen lehessen aktiválni/passziválni|
+|  K14 |     Weboldalon legyen elérhető információ a cégről           |
+|  K15 |Regisztrált felhasználóknak profiljuk alatt elérik a bejelölt ajánlatokat, törölhetik azokat|
+
 
 
 #### Használati esetek
