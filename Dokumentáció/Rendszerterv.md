@@ -167,6 +167,16 @@ Rendszerhasználati esetek és lefutásaik:
 
 ### 7. Absztrakt domain modell
 
+A projekt során létrehozandó terméknek alkalmasnak kell lennie a cég munkatársaihoz tartozó adatok tárolására, valamint érdeklődők adatainak tárolására is, akik felhasználóként regisztrációt hozthatnak létre, böngészhetik a felületet és ajánlatot kérhetnek. Ehhez tárolni kell a cég által bérbeadandó autók adatait is, aktuális státuszukat (bérelt, elérhető, szervzíz alatt, stb), valamint az esetlegesen az autóban keletkezett károk adatait is.
+
+A gépkocsik adatait a cég munkatársai tudják módosítani, új kocsikat felvinni, illetve korábbiakat törölni. Bizonyos gépjármű adatok megadása kötelező, más adatok megadása opcionális.
+
+Lehetőséget kell biztosítani érdeklődő felhasználók regisztrációjára, a regisztráció során megadott adatokat, valamint a bérlések adatait tárolni kell és visszakereshető formában biztosítani kell a kapcsolatot a gépjármű és a felhasználó között.
+
+Szintén visszakövethető formában kell tárolni a gépjárművek státuszváltozásait, mikor, meddig, ki által volt kibérelve, milyen károk keletkeztek benne, mikor volt szervizelve, milyen aktuális felszereltséggel és műszaki állapottal rendelkezik a jármű.
+
+
+
 ### 8. Architekturális terv
 
 ### 9. Adatbázisterv
