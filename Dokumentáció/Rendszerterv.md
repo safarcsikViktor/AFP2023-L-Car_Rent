@@ -156,7 +156,7 @@ Rendszerhasználati esetek és lefutásaik:
 
 - Fizikai alrendszerek:
   - Webszerver: 80-as porton elérhető HTTP szolgáltatás
-  - adatbázis ?
+  - Adatbázis: MySQL
   - Kliens gép: internethozzáféréssel, megfelelő böngészővel és kellő hardverrel rendelkező eszköz
 
 - Fejlesztői eszközök:
