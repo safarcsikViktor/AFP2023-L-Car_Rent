@@ -188,6 +188,9 @@ Webes felületen lehet elérni a felhasználói interfészt, ami webszerveren ke
 
 A rendszer biztonsági funkciójaihoz tartozik az, hogy a weboldal rendelkezik adminisztrációs fiókkal. Az admin fiókból lehetséges kezelni a felhasználók hirdetéseit.
 
+<p align="center" >
+    <img src="https://user-images.githubusercontent.com/85219194/231390924-72bb1892-45b3-46f8-8a97-371287091837.png">
+</p>
 
 
 ### 9. Adatbázisterv
