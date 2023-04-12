@@ -182,6 +182,14 @@ Szintén visszakövethető formában kell tárolni a gépjárművek státuszvál
 
 ### 8. Architekturális terv
 
+A rendszer működéséhez szükség van egy adatbázis szerverre. Erre a célra egy MySql adatbázis lett létrehozva. A weboldal és az adatbázis közötti kommunikáció PDO segítségével történik.
+
+Webes felületen lehet elérni a felhasználói interfészt, ami webszerveren keresztül kommunikál az adatbázissal. A weboldal internetes kapcsolattal érhető el a felhasználó eszközéről.
+
+A rendszer biztonsági funkciójaihoz tartozik az, hogy a weboldal rendelkezik adminisztrációs fiókkal. Az admin fiókból lehetséges kezelni a felhasználók hirdetéseit.
+
+
+
 ### 9. Adatbázisterv
 
 ### 10. Implementációs terv
