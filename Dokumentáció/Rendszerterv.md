@@ -204,8 +204,8 @@ A tesztelés során törekszünk a Funkcionális Specifikációban elfogadott k�
 A projektmunkatársak egyaránt végeznek teszteléseket is a fejlesztés mellett. A tesztelés eredményeit a tesztjegyzőkönyvben szükséges dokumentálni minden tesztesethez kapcsolódóan egy külön lapon. A tesztjegyzőkönyv sablonja a Rendszerterv mellékleteihez van csatolva, ott van lehetőség a letöltésére.
 
 
-<p align="center" >
-    <img src="https://user-images.githubusercontent.com/83767448/229914837-757335ac-5a33-449d-a79e-1960f8109949.png">
+<p align="center">
+    <img width="500px" height="650px" src="https://user-images.githubusercontent.com/83767448/231597205-e8aae607-c438-4de7-953a-48319c3a76ea.png">
 </p>
 
 A tesztelés a fejlesztés során is használt környezetben történik. A fejlesztői teszteket a programozás során a programozó automatikusan elvégzi, erről külön tesztjegyzőkönyv készítésére nincs szükség. A prototípus teszteket, integrációs teszteket a projektmunkatársak a megadott feladatmegosztás szerint végzik el, és az eredményt minden esetben dokumentálják a megadott tesztjegyzőkönyv sablon kitöltésével.
