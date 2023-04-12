@@ -175,6 +175,9 @@ Lehetőséget kell biztosítani érdeklődő felhasználók regisztrációjára,
 
 Szintén visszakövethető formában kell tárolni a gépjárművek státuszváltozásait, mikor, meddig, ki által volt kibérelve, milyen károk keletkeztek benne, mikor volt szervizelve, milyen aktuális felszereltséggel és műszaki állapottal rendelkezik a jármű.
 
+<p align="center" >
+    <img src="https://user-images.githubusercontent.com/85219194/231386158-0832c4ab-2d61-42d0-8792-084dca2be88e.png">
+</p>
 
 
 ### 8. Architekturális terv
