@@ -242,3 +242,5 @@ A tesztelés a fejlesztés során is használt környezetben történik. A fejle
 ### 12. Telepítési terv
 
 ### 13. Karbantartási terv
+A karbantartási terv részeként magába foglalja a weboldalról készült rendszeres biztonsági mentést aminek segítségével meghibásodás esetén az utolsó működőképes állapot visszaállítására lehetőség legyen.
+Továbbá ide tartozik a bejelentések során érkezett hibák kijavítása, illetve az általános átvizsgálás során észlelt hibák javítása és a felmerülő új igények implementálása is.
