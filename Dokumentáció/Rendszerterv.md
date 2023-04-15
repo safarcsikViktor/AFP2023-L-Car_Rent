@@ -240,6 +240,9 @@ A tesztelés a fejlesztés során is használt környezetben történik. A fejle
 - 11.2. Biztonsági teszt a szenzitív adatok tárolására
 
 ### 12. Telepítési terv
+Kliens: Modern böngésző telepítése és állandó stabil internetkapcsolat szükséges a weboldal használatba vételéhez.
+
+Szerver: Apache-PHP-MySQL struktúrát támogató tárhelyre lesz szükség.
 
 ### 13. Karbantartási terv
 A karbantartási terv részeként magába foglalja a weboldalról készült rendszeres biztonsági mentést aminek segítségével meghibásodás esetén az utolsó működőképes állapot visszaállítására lehetőség legyen.
