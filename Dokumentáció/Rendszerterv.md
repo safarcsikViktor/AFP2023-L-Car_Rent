@@ -198,7 +198,7 @@ A rendszer biztonsági funkciójaihoz tartozik az, hogy a weboldal rendelkezik a
 Az adatbázisban tároljuk a dolgozók, a regisztrált felhasználók, a bérelhető autók, a bérleti szerződések és a káresemények adatait. Az adatbázis csillagsémának megfelelően került kialakításra.
 
 <p align="center" >
-    <img src="https://user-images.githubusercontent.com/85219194/233439213-b6128957-f2f4-45ab-a71d-9a9f60f9d9ca.JPG">
+    <img src="https://user-images.githubusercontent.com/85219194/233775978-711a1555-b805-4150-b172-e6bfc6118457.JPG">
 </p>
 
 
