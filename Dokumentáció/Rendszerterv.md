@@ -204,6 +204,8 @@ Az adatbázisban tároljuk a dolgozók, a regisztrált felhasználók, a bérelh
 
 ### 10. Implementációs terv
 
+PHP kód valósítja meg az üzleti logikát amely egy webszerveren fut, felhasználói felületnek pedig a HTML ad otthont. Kinézetről és az oldalon található funkciókért a CSS és a Javascript gondoskodik. 
+
 ### 11. Tesztterv
 
 A tesztelés során törekszünk a Funkcionális Specifikációban elfogadott követelménylista alapján összeállítani a teszteseteket, és a meghatározott követelmények tesztelését a lehetőleg legszélesebb körben lefedni.
