@@ -24,11 +24,18 @@ INSERT INTO `car_status` (`status_id`, `status_description`) VALUES
 ('m', 'Megsérült'),
 ('s', 'Szervíz alatt');
 
--- Üzemanyagok inserteji
+-- Üzemanyagok insertjei
 
-INSERT INTO `fuel_type` (`fuel_type_id`, `fuel_type_description`) VALUES 
-('b', 'Benzin'),
-('d', 'Dízel'), 
-('h', 'Hibrid'), 
-('e', 'Elektromos');
+INSERT INTO `fuel_type` (`fuel_type_id`, `fuel_type_description`) VALUES
+('b', 'Benzin - Üzemanyag belső égésű motorokhoz, amely ásványolajból készül. Színtelen, szagával petróleumra emlékeztető, gyorsan párolgó anyag.'),
+('d', 'Dízel - Kőolaj származékkal működő (gép); ezzel kapcsolatos (anyag)'),
+('e', 'Elektromos - Az EV rövidítés azokat a járműveket jelenti, melyek meghajtása elektromos áramot használ. '),
+('h', 'Hibrid - A belső égésű motor és a villanymotor kombinációja jelenik meg benne.');
+
+
+-- Váltók insertjei
+
+
+
+
 
