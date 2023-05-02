@@ -14,3 +14,10 @@ INSERT INTO `car_category` (`car_category`, `car_category_description`) VALUES
 ('L4', 'Motorkerékpár, oldalkocsis 50 cm3 és 45 km/h felett'), 
 ('L5', 'háromkerekű tricikli, azaz három szimmetrikus elrendezésű kerékkel rendelkező jármű, 
  amennyiben 50 cm3-nél nagyobb hengerűrtartalmú belső égésű motorral vannak ellátva és/vagy a tervezési sebességük nagyobb, mint 45 km/ó');
+ 
+INSERT INTO `car_status` (`status_id`, `status_description`) VALUES
+('e', 'Elérhető'),
+('f', 'Foglalt'),
+('m', 'Megsérült'),
+('s', 'Szervíz alatt');
+
