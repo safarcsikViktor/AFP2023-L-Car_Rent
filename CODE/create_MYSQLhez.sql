@@ -12,14 +12,17 @@ ALTER TABLE admin ADD CONSTRAINT admin_pk PRIMARY KEY ( admin_id );
 CREATE TABLE car (
     car_id NUMERIC NOT NULL COMMENT "Gépjármű egyedi azonosítója",
     status CHAR(1) NOT NULL COMMENT "Gépjármű aktuális státusza",
-    photo  BLOB COMMENT "Fénykép"
+    photo  BLOB COMMENT "Fénykép",
+    reg_num  varchar(10) NOT NULL COMMENT "A gépjármű rendszáma"
+    
 ) COMMENT "A táblában a gépjármű azonosító adatait és elérhetőségét tároljuk.";
 
 ALTER TABLE car ADD CONSTRAINT car_pk PRIMARY KEY ( car_id );
 
 CREATE TABLE car_category (
     car_category             VARCHAR(2) NOT NULL COMMENT "Gépjármű típusa (B, P, ...)",
-    car_category_description VARCHAR(150) NOT NULL COMMENT "Gépjármű típus leírása"
+    car_category_description VARCHAR(150) NOT NULL COMMENT "Gépjármű típus leírása",
+    reg_num  varchar(10) NOT NULL COMMENT "A gépjármű rendszáma"
 ) COMMENT "Nyilvántartott gépjármű típusok megnevezése";
 
 ALTER TABLE car_category ADD CONSTRAINT car_category_pk PRIMARY KEY ( car_category );
@@ -37,7 +40,9 @@ CREATE TABLE car_description (
     number_of_doors    NUMERIC COMMENT "Ajtók száma",
     number_of_seats    NUMERIC COMMENT "Ülések száma",
     packages           VARCHAR(20) COMMENT "Elhelyezhető csomagok",
-    rental_fee         NUMERIC COMMENT "Bérleti díj összege / nap"
+    rental_fee         NUMERIC COMMENT "Bérleti díj összege / nap",
+     reg_num  varchar(10) NOT NULL COMMENT "A gépjármű rendszáma"
+    
 ) COMMENT "A bérlehető gépjárművek részletes adatait tartjuk nyilván a táblában";
 
 ALTER TABLE car_description ADD CONSTRAINT car_description_pk PRIMARY KEY ( car_id );
