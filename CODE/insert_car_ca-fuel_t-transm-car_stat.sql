@@ -1,3 +1,4 @@
+-- Gépjármű kategóriák insertjei
 INSERT INTO `car_category` (`car_category`, `car_category_description`) VALUES 
 ('M1', ' Személyszállító gépkocsik, a gépjárművezető ülésén kívül legfeljebb nyolc ülőhellyel.'),
 ('M2', 'Személyszállító gépkocsik, a gépjárművezető ülésén kívül több mint nyolc ülőhellyel és legfeljebb 5 t műszakilag megengedett legnagyobb össztömeggel.'),
@@ -15,9 +16,19 @@ INSERT INTO `car_category` (`car_category`, `car_category_description`) VALUES
 ('L5', 'háromkerekű tricikli, azaz három szimmetrikus elrendezésű kerékkel rendelkező jármű, 
  amennyiben 50 cm3-nél nagyobb hengerűrtartalmú belső égésű motorral vannak ellátva és/vagy a tervezési sebességük nagyobb, mint 45 km/ó');
  
+-- Gépjámű státuszok insertjei
+  
 INSERT INTO `car_status` (`status_id`, `status_description`) VALUES
 ('e', 'Elérhető'),
 ('f', 'Foglalt'),
 ('m', 'Megsérült'),
 ('s', 'Szervíz alatt');
+
+-- Üzemanyagok inserteji
+
+INSERT INTO `fuel_type` (`fuel_type_id`, `fuel_type_description`) VALUES 
+('b', 'Benzin'),
+('d', 'Dízel'), 
+('h', 'Hibrid'), 
+('e', 'Elektromos');
 
