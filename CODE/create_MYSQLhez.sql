@@ -34,8 +34,8 @@ CREATE TABLE car_description (
     engine_power       NUMERIC COMMENT "Motor teljesítménye",
     air_conditining    VARCHAR(1) COMMENT "Légkondícionáló",
     gps                VARCHAR(1) COMMENT "GPS",
-    NUMERIC_of_doors    NUMERIC COMMENT "Ajtók száma",
-    NUMERIC_of_seats    NUMERIC COMMENT "Ülések száma",
+    number_of_doors    NUMERIC COMMENT "Ajtók száma",
+    number_of_seats    NUMERIC COMMENT "Ülések száma",
     packages           VARCHAR(20) COMMENT "Elhelyezhető csomagok",
     rental_fee         NUMERIC COMMENT "Bérleti díj összege / nap"
 ) COMMENT "A bérlehető gépjárművek részletes adatait tartjuk nyilván a táblában";
@@ -93,7 +93,7 @@ CREATE TABLE profile (
     profile_id           NUMERIC NOT NULL COMMENT "Regisztrált felhasználó egyedi azonosítója",
     user_name            VARCHAR(100) NOT NULL COMMENT "Felhasználónév",
     email_address        VARCHAR(100) NOT NULL COMMENT "Regisztráció során megadott email cím",
-    phone_NUMERIC        VARCHAR(100) COMMENT "Telefonszám",
+    phone_number         VARCHAR(100) COMMENT "Telefonszám",
     date_of_registration DATE NOT NULL COMMENT "Regisztráció időpontja",
     status               VARCHAR(5) COMMENT "Regisztrált profil státusza",
     pwd                  VARCHAR(500) COMMENT "Jelszó (titkosítottan tárolt)",
