@@ -21,8 +21,8 @@ ALTER TABLE car ADD CONSTRAINT car_pk PRIMARY KEY ( car_id );
 
 CREATE TABLE car_category (
     car_category             VARCHAR(2) NOT NULL COMMENT "Gépjármű típusa (B, P, ...)",
-    car_category_description VARCHAR(150) NOT NULL COMMENT "Gépjármű típus leírása",
-    reg_num  varchar(10) NOT NULL COMMENT "A gépjármű rendszáma"
+    car_category_description VARCHAR(150) NOT NULL COMMENT "Gépjármű típus leírása"
+   
 ) COMMENT "Nyilvántartott gépjármű típusok megnevezése";
 
 ALTER TABLE car_category ADD CONSTRAINT car_category_pk PRIMARY KEY ( car_category );
