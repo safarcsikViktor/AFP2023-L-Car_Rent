@@ -35,6 +35,9 @@ INSERT INTO `fuel_type` (`fuel_type_id`, `fuel_type_description`) VALUES
 
 -- Váltók insertjei
 
+INSERT INTO `transmission` (`transmission_type_id`, `transmission_type_description`) VALUES
+('AT', 'Ez egy olyan rendszer, amely különböző paraméterek – főként a gépjármű sebessége – alapján automatikusan végzi a sebességfokozat váltásokat. '),
+('MT', 'A klasszikus manuális sebességváltó vezérlése kézzel történik.');
 
 
 
