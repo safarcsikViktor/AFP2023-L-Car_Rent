@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\Auth\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,4 +29,6 @@ Route::get('/profile', [PagesController::class, 'getProfile'])->name('profile');
 
 Route::get('/rentacar', [PagesController::class, 'getRentACar'])->name('rentacar');
 
-Route::get('/auth/register', [PagesController::class, 'register'])->name('register');
+Route::get('/register', [PagesController::class, 'register'])->name('auth.register');
+
+Route::get('/login', [PagesController::class, 'login'])->name('auth.login');
