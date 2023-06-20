@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PagesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +18,13 @@ Route::get('/', function () {
     return view('home');
 });
 
+
+Route::get('/', [PagesController::class, 'getHome'])->name('home');
+
+Route::get('/cars', [PagesController::class, 'getCars'])->name('cars');
+
+Route::get('/profile', [PagesController::class, 'getProfile'])->name('profile');
+
+Route::get('/rentacar', [PagesController::class, 'getRentACar'])->name('rentacar');
+
+Route::get('/auth/register', [PagesController::class, 'register'])->name('register');
