@@ -1,0 +1,5 @@
+INSERT INTO `profile_x_contract_x_car` (`profile_id`, `car_id`, `contract_id`) VALUES
+('30004', '5', '3'),
+('30010', '5', '1'),
+('30010', '6', '2');
+
