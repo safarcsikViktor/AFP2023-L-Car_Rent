@@ -11,22 +11,21 @@
             <li class="nav-item">
                 <a href="{{ route('cars') }}" class="nav-link {{ Request::is('cars') ? 'active' : '' }}">Autókínálatunk</a>
             </li>
-            @auth
+            {{--@auth --}}
                 <li class="nav-item">
                     <a href="{{ route('profile') }}" class="nav-link {{ Request::is('profile') ? 'active' : '' }}">Profil</a>
                 </li>
                 <li class="nav-item">
                     <a href="{{ route('rentacar') }}" class="nav-link {{ Request::is('rentacar') ? 'active' : '' }}">Autóbérlés</a>
                 </li>
-            @endauth
+            {{--@endauth--}}
             <li class="nav-item">
-                <a href="{{ route('auth.register') }}" class="nav-link {{ Request::is('register') ? 'active' : '' }}">
-                    {{ __('Regisztráció') }}</a>
+                <a href="{{ route('auth.register') }}" class="nav-link {{ Request::is('register') ? 'active' : '' }}">Regisztráció</a>
             </li>
             <li class="nav-item">
-                <a href="{{ route('auth.login') }}" class="nav-link {{ Request::is('login') ? 'active' : '' }}">
-                    {{ __('Bejelentkezés') }}</a>
+                <a href="{{ route('auth.login') }}" class="nav-link {{ Request::is('login') ? 'active' : '' }}">Bejelentkezés</a>
             </li>
+
         </ul>
     </div>
 </nav>
