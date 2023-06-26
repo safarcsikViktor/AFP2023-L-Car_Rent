@@ -12,23 +12,22 @@ class LoginController extends Controller
     public function create() {
         return view('auth.login');
     }
+
     public function store(Request $request) {
-        $request->validate([
-            'user_name' => 'required|string|min:2|max:255',
-            'email_address' => 'required|email|max:255|unique:users',  //validálás
-            'pwd' => 'required|min:8|confirmed'
-        ]);
+        $credentials = $request->only('email_address', 'pwd');
+        if (!Auth::attempt($credentials, $request->filled('remember_me'))) {
+            throw ValidationException::withMessages([
+                'email_address' => __('auth.failed')
+            ]);
+        }// ez eddig egy próbálkozás, ha nem megy ,akkor hibaüzenet
+        $request->session()->regenerate(); //belépés
+        return redirect()->intended(); // átdonjuk oda aholl volt
+    }
 
-        $user = User::create([  // létrehozzuk a felhasználót, átadom a tömböt
-           'user_name' => $request->name,
-           'email_address' => $request->email,
-           'pwd' => Hash::make($request->password)// elheselem a jelszót, a hash osztály make metódusával
-        ]);
-
-        event(new Registered($user)); //regisztrálom az új usert, nem fontos, de ha valaki regisztrál, köthetünk hozzá üdvözlő szöveget
-
-        Auth::login($user);// ha már bereggelt, maradjon is bejelentkezve
-
-        return redirect()->intended(); //ha megvan a reg akkor oda rak, ahol belefutottam a reg hiányába
+    public function destroy(Request $request) {
+        Auth::logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+        return redirect()->route('home');
     }
 }
