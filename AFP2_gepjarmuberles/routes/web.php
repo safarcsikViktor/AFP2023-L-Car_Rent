@@ -29,6 +29,13 @@ Route::get('/profile', [PagesController::class, 'getProfile'])->name('profile');
 
 Route::get('/rentacar', [PagesController::class, 'getRentACar'])->name('rentacar');
 
-Route::get('/register', [PagesController::class, 'register'])->name('auth.register');
 
-Route::get('/login', [PagesController::class, 'login'])->name('auth.login');
+Route::get('/register', [RegisterController::class, 'create'])->name('auth.register');
+
+Route::post('/register', [RegisterController::class, 'store']);
+
+Route::get('/login', [PagesController::class, 'create'])->name('auth.login');
+
+Route::post('/login', [LoginController::class, 'store']);
+
+Route::post('/logout', [LoginController::class, 'destroy'])->name('auth.logout');
