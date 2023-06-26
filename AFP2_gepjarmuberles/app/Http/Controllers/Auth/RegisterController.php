@@ -1,52 +1,37 @@
-@extends('layouts.app')
+<?php
 
-@section('content')
-<div class="row">
-    <div class="col-md-6 col-lg-5 mx-auto">
-        <div class="card">
-            <div class="card-body">
-                <h4 class="display-4 mb-4">{{ __('Regisztráció') }}</h4>
-                <form action="{{ route('auth.register') }}" method="POST">
-                    @csrf
-                    <div class="mb-3">
-                        <label class="mb-2" for="email">{{ __('Email cím') }}</label>
-                        <input class="form-control {{ $errors->has('email') ? ' is-invalid' : '' }}"
-                        type="text" name="email" value="{{ old('email') }}">
-                        @if ($errors->has('email'))
-                            <p class="invalid-feedback">{{ $errors->first('email') }}</p>
-                        @endif
-                    </div>
-                    <div class="mb-3">
-                        <label class="mb-2" for="name">{{ __('Teljes név') }}</label>
-                        <input class="form-control {{ $errors->has('name') ? ' is-invalid' : '' }}"
-                        type="text" name="name" value="{{ old('name') }}">
-                        @if ($errors->has('name'))
-                            <p class="invalid-feedback">{{ $errors->first('name') }}</p>
-                        @endif
-                    </div>
-                    <div class="mb-3">
-                        <label class="mb-2" for="password">{{ __('Jelszó') }}</label>
-                        <input class="form-control {{ $errors->has('password') ? ' is-invalid' : '' }}"
-                        type="password" name="password" value="{{ old('password') }}">
-                        @if ($errors->has('password'))
-                            <p class="invalid-feedback">{{ $errors->first('password') }}</p>
-                        @endif
-                    </div>
-                    <div class="mb-3">
-                        <label class="mb-2" for="password_confirmation">{{ __('Jelszó megerősítése') }}</label>
-                        <input class="form-control {{ $errors->has('password_confirmation') ? ' is-invalid' : '' }}"
-                        type="password" name="password_confirmation" value="{{ old('password_confirmation') }}">
-                        @if ($errors->has('password_confirmation'))
-                            <p class="invalid-feedback">{{ $errors->first('password_confirmation') }}</p>
-                        @endif
-                    </div>
-                    <div class="d-grid">
-                        <button class="btn btn-primary btn-lg">{{ __('Sign up') }}</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
+namespace App\Http\Controllers\Auth;
 
-@endsection
+use App\Models\User;
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use Illuminate\Auth\Events\Registered;
+use Auth;
+use Hash;
+
+class RegisterController extends Controller
+{
+    public function create() {
+        return view('auth.register');  //megjeleníti az űrlapot
+    }
+
+    public function store(Request $request) {
+        $request->validate([
+            'user_name' => 'required|string|min:2|max:255',
+            'email_address' => 'required|email|max:255|unique:users',  //validálás
+            'pwd' => 'required|min:8|confirmed'
+        ]);
+
+        $user = User::create([  // létrehozzuk a felhasználót, átadom a tömböt
+           'user_name' => $request->name,
+           'email_address' => $request->email,
+           'pwd' => Hash::make($request->password)// elheselem a jelszót, a hash osztály make metódusával
+        ]);
+
+        event(new Registered($user)); //regisztrálom az új usert, nem fontos, de ha valaki regisztrál, köthetünk hozzá üdvözlő szöveget
+
+        Auth::login($user);// ha már bereggelt, maradjon is bejelentkezve
+
+        return redirect()->intended(); //ha megvan a reg akkor oda rak, ahol belefutottam a reg hiányába
+    }
+}
