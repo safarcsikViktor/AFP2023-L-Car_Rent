@@ -18,20 +18,20 @@ class RegisterController extends Controller
     public function store(Request $request) {
         $request->validate([
             'user_name' => 'required|string|min:2|max:255',
-            'email_address' => 'required|email|max:255|unique:users',  //validálás
+            'email_address' => 'required|email|max:255|unique:users',
             'pwd' => 'required|min:8|confirmed'
         ]);
 
-        $user = User::create([  // létrehozzuk a felhasználót, átadom a tömböt
+        $user = User::create([
            'user_name' => $request->name,
            'email_address' => $request->email,
-           'pwd' => Hash::make($request->password)// elheselem a jelszót, a hash osztály make metódusával
+           'pwd' => Hash::make($request->password)
         ]);
 
-        event(new Registered($user)); //regisztrálom az új usert, nem fontos, de ha valaki regisztrál, köthetünk hozzá üdvözlő szöveget
+        event(new Registered($user));
 
-        Auth::login($user);// ha már bereggelt, maradjon is bejelentkezve
+        Auth::login($user);
 
-        return redirect()->intended(); //ha megvan a reg akkor oda rak, ahol belefutottam a reg hiányába
+        return redirect()->intended();
     }
 }
