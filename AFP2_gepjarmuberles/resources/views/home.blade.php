@@ -8,7 +8,7 @@
                 <p class="lead">Cégünk 10 éve foglalkozik autóbérléssel. A jelenleg elérhető autóinkat megtekintheti az fenti menükön.</p>
             </div>
         </div>
-
+        <div class="feature text-left">   <h2>Kiemelt autóink</h2></div>
         <div class="row">
             <div class="col-md-6">
                 <div class="card car-card">
