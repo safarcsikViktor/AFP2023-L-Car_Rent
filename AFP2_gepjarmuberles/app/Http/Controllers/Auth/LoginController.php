@@ -19,15 +19,10 @@ class LoginController extends Controller
             throw ValidationException::withMessages([
                 'email_address' => __('auth.failed')
             ]);
-        }// ez eddig egy próbálkozás, ha nem megy ,akkor hibaüzenet
-        $request->session()->regenerate(); //belépés
-        return redirect()->intended(); // átdonjuk oda aholl volt
+        }
+        $request->session()->regenerate();
+        return redirect()->intended();
     }
 
-    public function destroy(Request $request) {
-        Auth::logout();
-        $request->session()->invalidate();
-        $request->session()->regenerateToken();
-        return redirect()->route('home');
-    }
+
 }
