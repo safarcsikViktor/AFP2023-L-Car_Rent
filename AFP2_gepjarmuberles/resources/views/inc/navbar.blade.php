@@ -11,14 +11,14 @@
             <li class="nav-item">
                 <a href="{{ route('cars') }}" class="nav-link {{ Request::is('cars') ? 'active' : '' }}">Autókínálatunk</a>
             </li>
-            {{--@auth --}}
-                <li class="nav-item">
-                    <a href="{{ route('profile') }}" class="nav-link {{ Request::is('profile') ? 'active' : '' }}">Profil</a>
-                </li>
-                <li class="nav-item">
-                    <a href="{{ route('rentacar') }}" class="nav-link {{ Request::is('rentacar') ? 'active' : '' }}">Autóbérlés</a>
-                </li>
-            {{--@endauth--}}
+
+            <li class="nav-item">
+                <a href="{{ route('profile') }}" class="nav-link {{ Request::is('profile') ? 'active' : '' }}">Profil</a>
+            </li>
+            <li class="nav-item">
+               <a href="{{ route('rentacar') }}" class="nav-link {{ Request::is('rentacar') ? 'active' : '' }}">Autóbérlés</a>
+            </li>
+
             <li class="nav-item">
                 <a href="{{ route('auth.register') }}" class="nav-link {{ Request::is('register') ? 'active' : '' }}">Regisztráció</a>
             </li>
